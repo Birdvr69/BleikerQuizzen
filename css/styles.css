@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, sans-serif; background: #0f172a; color: #f8fafc; }
+.container { width: 92%; max-width: 900px; margin: 0 auto; }
+.site-header { background: #111827; padding: 8px 0; }
+.nav { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.logo { color: #f97316; text-decoration: none; font-family: "Bebas Neue", sans-serif; font-size: 30px; }
+.nav-links { list-style: none; display: flex; gap: 12px; margin: 0; padding: 0; flex-wrap: wrap; }
+.nav a { color: #f8fafc; text-decoration: none; }
+.hero, .page-content { padding: 16px 0; }
+.hero h1 { margin: 6px 0; font-family: "Bebas Neue", sans-serif; font-size: 52px; }
+.hero h2 { margin: 4px 0 10px; font-size: 22px; }
+.eyebrow { color: #22d3ee; margin: 0; font-size: 13px; }
+.card, .feature { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 12px; margin: 10px 0; }
+.btn { background: #f97316; color: #111827; border: 0; border-radius: 6px; padding: 8px 12px; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-block; }
+.btn-secondary { background: #22d3ee; }
+.cta-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.text-link { color: #22d3ee; }
+.site-footer { background: #111827; margin-top: 20px; padding: 10px 0; }
+.footer-grid { color: #cbd5e1; }
+img, .media { max-width: 100%; border-radius: 8px; }
+.quiz-top { display: flex; justify-content: space-between; }
+.progress-track { height: 8px; background: #334155; border-radius: 99px; overflow: hidden; margin-bottom: 10px; }
+.progress-bar { height: 8px; width: 10%; background: #22d3ee; }
+#playerName { width: 100%; max-width: 320px; padding: 8px; border-radius: 6px; border: 1px solid #334155; margin: 5px 0 10px; }
+.answer-grid { display: grid; gap: 8px; margin: 10px 0; }
+.answer-btn { background: #334155; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; padding: 8px; text-align: left; cursor: pointer; }
+.answer-btn.correct { background: #14532d; }
+.answer-btn.wrong { background: #7f1d1d; }
+.answer-btn:disabled { opacity: 0.9; cursor: not-allowed; }
+.feedback { min-height: 20px; font-weight: 700; }
+.hidden { display: none; }
+@media (max-width: 700px) { .nav { flex-direction: column; align-items: start; } .hero h1 { font-size: 42px; } }

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BleikerQuizzen | Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="index.html">BleikerQuizzen</a>
+        <ul class="nav-links">
+          <li><a href="grafisk-profil.html">Grafisk profil</a></li>
+          <li><a href="quiz.html" aria-current="page">Quiz</a></li>
+          <li><a href="video.html">Videoinnslag</a></li>
+          <li><a href="some.html">SoMe / annonser</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container page-content quiz-page">
+      <h1>BleikerQuizzen</h1>
+      <p>Velg riktig svar på hvert spørsmål og prøv å nå toppen av topplista.</p>
+
+      <section class="card" id="start-screen">
+        <h2>Start quiz</h2>
+        <label for="playerName">Navn:</label>
+        <input id="playerName" type="text" maxlength="24" placeholder="Skriv navnet ditt" />
+        <button class="btn" id="startBtn">Start</button>
+      </section>
+
+      <section class="card hidden" id="quiz-screen">
+        <div class="quiz-top">
+          <p id="progress">Spørsmål 1/10</p>
+          <p id="score">Poeng: 0</p>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+        <h2 id="questionText"></h2>
+
+        <div id="videoWrapper" class="hidden">
+          <video id="questionVideo" class="media" controls preload="metadata"></video>
+        </div>
+
+        <div id="answers" class="answer-grid"></div>
+        <p id="feedback" class="feedback"></p>
+        <button class="btn hidden" id="nextBtn">Neste spørsmål</button>
+      </section>
+
+      <section class="card hidden" id="result-screen">
+        <h2>Ferdig!</h2>
+        <p id="finalText"></p>
+        <h3>Top 5 highscore</h3>
+        <ol id="highscoreList"></ol>
+        <button class="btn" id="restartBtn">Spill igjen</button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p><strong>Laget av:</strong> [Ditt navn]</p>
+        <p><strong>Logo:</strong> BleikerQuizzen</p>
+        <p><strong>Kontakt:</strong> [epost/skolekonto]</p>
+      </div>
+    </footer>
+
+    <script src="quiz.js"></script>
+  </body>
+  </html>

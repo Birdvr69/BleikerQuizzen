@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BleikerQuizzen | Videoinnslag</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="index.html">BleikerQuizzen</a>
+        <ul class="nav-links">
+          <li><a href="grafisk-profil.html">Grafisk profil</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="video.html" aria-current="page">Videoinnslag</a></li>
+          <li><a href="some.html">SoMe / annonser</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container page-content">
+      <h1>Videoinnslag</h1>
+      <p>
+        Legg inn den ferdige filmen fra avdelingen her. Filen kan for eksempel
+        hete <code>assets/avdeling-video.mp4</code>.
+      </p>
+
+      <section class="card">
+        <h2>Avdelingsvideo</h2>
+        <video controls preload="metadata" class="media">
+          <source src="assets/avdeling-video.mp4" type="video/mp4" />
+          Nettleseren støtter ikke videoavspilling.
+        </video>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p><strong>Laget av:</strong> [Ditt navn]</p>
+        <p><strong>Logo:</strong> BleikerQuizzen</p>
+        <p><strong>Kontakt:</strong> [epost/skolekonto]</p>
+      </div>
+    </footer>
+  </body>
+  </html>
